@@ -11,7 +11,8 @@ for ($i=0; $i<$arrLen; $i++) {
             print('		<link href="'.$fd[$i]['link'] .'" rel="alternate" type="text/html"/>'. PHP_EOL);
         }else{
             print('		<link href="http://facebook.com/'.$fd[$i]['id'] .'" rel="alternate" type="text/html"/>'. PHP_EOL);
-        }
+            print('                <image href="https://graph.facebook.com/'.explode('_', $fd[$i]['id'] )[1].'/picture" rel="alternate" type="text/html"/>'. PHP_EOL);
+	}
 
         if(isset($fd[$i]['message'])){
             print('		<title>'.htmlspecialchars(strlen($fd[$i]['message'])>100 ? substr($fd[$i]['message'],0,100)."..." : $fd[$i]['message']).'</title>'. PHP_EOL);
