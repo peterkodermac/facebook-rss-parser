@@ -1,4 +1,4 @@
-Forked from [scottfalkingham/facebook-rss-parser](https://github.com/scottfalkingham/facebook-rss-parser), with one exception: <images>. This node contains a direct link to the image in the post.
+Forked from [scottfalkingham/facebook-rss-parser](https://github.com/scottfalkingham/facebook-rss-parser), with one exception: ```<images>```. This node contains a direct link to the image in the post.
 
 Facebook API Setup
 -------------
